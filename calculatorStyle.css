@@ -1,0 +1,48 @@
+#calculator {
+    display: grid;
+    width: 25%;
+    height: 25%;
+    grid-template: 30% repeat(4, 1fr) / repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+#display {
+    grid-column: 1 / span 5;
+    text-align: right;
+    font-size: 24px;
+}
+
+#equals {
+    grid-area: 4 / 5 / span 2 / 5;
+    background-color: yellow;
+}
+
+#equals:hover {
+    border: solid yellow 1px;
+}
+
+#clear {
+    background-color: red;
+    color: white;
+}
+
+#clear:hover {
+    border: solid red 1px;
+}
+
+#delete {
+    background-color: blue;
+    color: white;
+}
+
+#delete:hover {
+    border: solid blue 1px;
+}
+
+.operation {
+    background-color: #D0D0D0;
+}
+
+.operation:hover {
+    border: solid #D0D0D0 1px;
+}
